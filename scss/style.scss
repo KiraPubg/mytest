@@ -1,0 +1,106 @@
+@import url(./fonts.css);
+
+* {
+	margin: 0;
+	padding: 0;
+	color: inherit;
+}
+
+body {
+	font-family: "Roboto", sans-serif;
+	color: #fff;
+	font-weight: 700;
+}
+
+.container {
+	max-width: 1280px;
+	width: 100%;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+.row {
+	display: flex;
+}
+
+.equipment {
+	background: rgba(86, 145, 232, 0.1);
+
+	& .container {
+		padding: 100px 0 128px;
+	}
+}
+
+.equipment__title {
+	font-size: 26px;
+	line-height: 30px;
+	text-align: center;
+	color: #1F1F8E;
+	margin-bottom: 65px;
+}
+
+.card__row {
+	gap: 30px
+}
+
+.card-1 {
+	background: url("../img/card-1.jpg") no-repeat center/cover;
+}
+
+.card-2 {
+	background: url("../img/card-2.jpg") no-repeat center/cover;
+}
+
+.card-3 {
+	background: url("../img/card-3.jpg") no-repeat center/cover;
+}
+
+.card {
+	border: 1px solid #5691E8;
+	max-width: 400px;
+	width: 100%;
+	height: 560px;
+	text-align: center;
+	padding-top: 75px;
+
+	&__title {
+		font-size: 24px;
+		margin-bottom: 35px;
+	}
+
+	&__btn {
+		padding: 14px 15px 12px 15px;
+		cursor: pointer;
+		background: #5691E8;
+		border: none;
+		display: flex;
+		column-gap: 10px;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto;
+		font-size: 14px;
+		font-weight: 700;
+		transition: background .3s ease-in-out;
+		&:hover {
+			background: lighten(#5691E8, 5%);
+		}
+	}
+
+}
+
+@media (max-width: 1299.98px) {
+	.card__row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.card {
+		max-width: 50%;
+	}
+}
+
+@media (max-width: 767.98px) {
+	.card {
+		max-width: 90%;
+	}
+}
